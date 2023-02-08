@@ -1,0 +1,22 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "version": "independent",
+  "command": {
+    "publish": {
+      "allowBranch": [
+        "master",
+        "next"
+      ],
+      "changelogPreset": "conventional-changelog-conventionalcommits",
+      "conventionalCommits": true,
+      "message": "chore: release"
+    },
+    "version": {
+      "push": true
+    }
+  }
+}

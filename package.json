@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "workspaces": [
+    "dev",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "lerna run dev --parallel -- --preserveWatchOutput",
+    "build": "lerna run build",
+    "publish": "lerna run build && lerna version --no-private && lerna publish from-git"
+  }
+}

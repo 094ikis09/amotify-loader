@@ -1,0 +1,12 @@
+@use 'amotify/styles' with (
+  $color-pack: false,
+  $utilities: false,
+  $alert-padding: 24px,
+);
+
+//@use 'sass:meta';
+//@include meta.load-css('amotify/styles', (
+//        color-pack: false,
+//        utilities: false,
+//        alert-padding: 24px,
+//));
