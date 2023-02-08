@@ -6,7 +6,7 @@ export function generateImports (source: string) {
     let code = ''
 
     if (components.length || directives.length) {
-        code += '\n\n/* Vuetify */\n'
+        code += '\n\n/* Amotify */\n'
 
         Array.from(imports).sort((a, b) => a[0] < b[0] ? -1 : (a[0] > b[0] ? 1 : 0))
             .forEach(([from, names]) => {

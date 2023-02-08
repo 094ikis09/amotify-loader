@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
-const { VuetifyPlugin } = require('webpack-plugin-vuetify')
+const { AmotifyPlugin } = require('webpack-plugin-amotify')
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 
 const isProd = process.env.NODE_ENV === 'production'
@@ -44,7 +44,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: /node_modules[/\\](?!(vuetify)[/\\])/
+                exclude: /node_modules[/\\](?!(amotify)[/\\])/
             },
             {
                 test: /\.css$/,
@@ -90,7 +90,7 @@ module.exports = {
     },
     plugins: [
         new VueLoaderPlugin(),
-        new VuetifyPlugin({
+        new AmotifyPlugin({
             styles: 'expose',
             // progressiveImages: true
         }),

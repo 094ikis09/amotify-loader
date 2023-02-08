@@ -21,10 +21,10 @@ export function getImports (source: string) {
     }
 
     resolvedComponents.forEach(component => {
-        addImport(imports, component.name, component.symbol, 'vuetify/lib/' + (importMap.components as any)[component.name].from)
+        addImport(imports, component.name, component.symbol, 'amotify/lib/' + (importMap.components as any)[component.name].from)
     })
     resolvedDirectives.forEach(directive => {
-        addImport(imports, directive.name, directive.symbol, 'vuetify/lib/directives/index.mjs')
+        addImport(imports, directive.name, directive.symbol, 'amotify/lib/directives/index.mjs')
     })
 
     return {

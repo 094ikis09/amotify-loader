@@ -1,6 +1,7 @@
 {
-  "name": "@amotify/loader-shared",
+  "name": "vite-plugin-amotify",
   "version": "0.0.1",
+  "description": "A Vite plugin for treeshaking Amotify components and more",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -16,21 +17,21 @@
   "bugs": {
     "url": "https://github.com/094ikis09/amotify-loader/issues"
   },
-  "homepage": "https://github.com/094ikis09/amotify-loader/packages/shared",
+  "homepage": "https://github.com/094ikis09/amotify-loader/packages/vite-plugin",
   "dependencies": {
-    "find-cache-dir": "^4.0.0",
-    "upath": "^2.0.1"
+    "@amotify/loader-shared": "^0.0.1",
+    "debug": "^4.3.4"
   },
   "peerDependencies": {
+    "vite": "^4.1.1",
     "amotify": "^0.0.1"
+  },
+  "engines": {
+    "node": ">=12"
   },
   "files": [
     "dist/"
   ],
-  "exports": {
-    ".": "./dist/index.js",
-    "./": "./"
-  },
   "publishConfig": {
     "access": "public"
   }

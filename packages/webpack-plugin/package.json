@@ -1,0 +1,49 @@
+{
+  "name": "webpack-plugin-amotify",
+  "version": "0.0.1",
+  "description": "A Webpack plugin for treeshaking Amotify components and more",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/094ikis09/amotify-loader.git"
+  },
+  "scripts": {
+    "build": "tsc --outdir dist",
+    "dev": "yarn run build --watch"
+  },
+  "author": "Kael Watts-Deuchar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/094ikis09/amotify-loader/issues"
+  },
+  "homepage": "https://github.com/094ikis09/amotify-loader/packages/webpack-plugin",
+  "dependencies": {
+    "@amotify/loader-shared": "^0.0.1",
+    "decache": "^4.6.1",
+    "file-loader": "^6.2.0",
+    "find-cache-dir": "^4.0.0",
+    "loader-utils": "^3.2.1",
+    "null-loader": "^4.0.1",
+    "upath": "^2.0.1"
+  },
+  "peerDependencies": {
+    "@vue/compiler-sfc": "^3.2.47",
+    "amotify": "^0.0.1",
+    "webpack": "^5.75.0"
+  },
+  "optionalPeerDependencies": {
+    "gm": "^1.25.0",
+    "pug": "^3.0.2",
+    "sharp": "^0.31.3"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
